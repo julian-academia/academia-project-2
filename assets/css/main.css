@@ -64,6 +64,8 @@ body {
   color: var(--default-color);
   background-color: var(--background-color);
   font-family: var(--default-font);
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
 }
 
 a {
@@ -147,6 +149,129 @@ img {
 
   .course-details .course-header .course-image img {
     height: 260px;
+  }
+}
+
+/* Final visual refinements */
+.container,
+.container-fluid,
+.container-xl {
+  --bs-gutter-x: 1.5rem;
+}
+
+.main p {
+  line-height: 1.75;
+}
+
+.page-title .heading {
+  padding: 64px 0;
+}
+
+.page-title .heading h1 {
+  font-size: 42px;
+  letter-spacing: 0;
+}
+
+section,
+.section {
+  padding: 72px 0;
+}
+
+.section-title {
+  padding-bottom: 44px;
+}
+
+.section-title p {
+  line-height: 1.25;
+}
+
+.course-item,
+.trainers-index .member,
+.events .card,
+.pricing .pricing-item,
+.testimonials .testimonial-item,
+.course-details .course-sidebar .pricing-card,
+.course-details .course-sidebar .course-info-card,
+.course-details .course-sidebar .course-tags,
+.course-details .course-content .what-you-learn {
+  border-radius: 8px;
+}
+
+.courses .course-item,
+.trainers-index .member,
+.events .card-body,
+.pricing .pricing-item,
+.testimonials .testimonial-item,
+.course-details .course-sidebar .pricing-card,
+.course-details .course-sidebar .course-info-card,
+.course-details .course-sidebar .course-tags {
+  box-shadow: 0 8px 24px rgba(21, 28, 101, 0.07);
+}
+
+.courses .course-content {
+  padding: 22px;
+}
+
+.courses .course-content h3,
+.trainers-index .member h4,
+.events .card-title,
+.pricing .pricing-item h3 {
+  line-height: 1.35;
+}
+
+.features .features-item {
+  border-radius: 6px;
+  box-shadow: 0 5px 18px rgba(21, 28, 101, 0.05);
+}
+
+.why-us .why-box,
+.why-us .icon-box {
+  border-radius: 8px;
+}
+
+.footer {
+  border-top: 1px solid rgba(246, 210, 75, 0.18);
+}
+
+.footer .footer-links ul a,
+.footer .footer-about p,
+.footer .footer-contact p,
+.footer .copyright {
+  color: color-mix(in srgb, var(--nav-dropdown-color), transparent 18%);
+}
+
+.footer .footer-newsletter .newsletter-form {
+  border-radius: 6px;
+  border-color: rgba(21, 28, 101, 0.16);
+}
+
+.footer .footer-newsletter .newsletter-form input[type=submit] {
+  border-radius: 6px;
+}
+
+.contact .email-form input[type=text],
+.contact .email-form input[type=email],
+.contact .email-form textarea {
+  border-radius: 6px;
+  min-height: 46px;
+}
+
+.contact .email-form textarea {
+  min-height: 150px;
+}
+
+@media (max-width: 1199px) {
+  section,
+  .section {
+    padding: 56px 0;
+  }
+
+  .page-title .heading {
+    padding: 48px 0;
+  }
+
+  .page-title .heading h1 {
+    font-size: 34px;
   }
 }
 
@@ -2306,5 +2431,5 @@ section,
 # Starter Section Section
 --------------------------------------------------------------*/
 .starter-section {
-  /* Add your styles here */
+  min-height: 280px;
 }
