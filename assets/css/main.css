@@ -116,6 +116,43 @@ img {
   object-fit: cover;
 }
 
+.courses .course-item {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.courses .course-item > img {
+  height: 180px;
+  flex-shrink: 0;
+  object-position: center;
+}
+
+.program-gallery .course-item > img {
+  height: 210px;
+}
+
+.courses .course-content {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.courses .course-content h3 {
+  min-height: 54px;
+  display: flex;
+  align-items: flex-start;
+}
+
+.courses .course-content .description {
+  line-height: 1.55;
+}
+
+.courses .course-content .trainer {
+  margin-top: auto;
+}
+
 .course-details .course-header .course-image img {
   height: 400px;
 }
@@ -143,8 +180,13 @@ img {
 
 @media (max-width: 768px) {
   .courses .course-item > img,
+  .program-gallery .course-item > img,
   .events .card-img img {
-    height: 220px;
+    height: 200px;
+  }
+
+  .courses .course-content h3 {
+    min-height: 0;
   }
 
   .course-details .course-header .course-image img {
