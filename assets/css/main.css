@@ -19,37 +19,37 @@
 
 /* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
 :root { 
-  --background-color: #f7f5ea; /* Warm ivory background for the entire website */
-  --default-color: #444444; /* Default color used for the majority of the text content across the entire website */
-  --heading-color: #151c65; /* KCC navy for headings and subheadings */
-  --accent-color: #f6d24b; /* KCC gold for links, buttons, and highlights */
-  --surface-color: #f7f5ea; /* Warm ivory surface color for cards and boxed elements */
-  --contrast-color: #151c65; /* Navy text for readability on KCC gold */
+  --background-color: #fbfaf6; /* Soft neutral background */
+  --default-color: #4b4f5c; /* Modern neutral text */
+  --heading-color: #11183f; /* Deep modern navy */
+  --accent-color: #dcb94b; /* Refined KCC gold */
+  --surface-color: #fffefa; /* Clean elevated surfaces */
+  --contrast-color: #11183f; /* Navy text for readability on gold */
 }
 
 /* Nav Menu Colors - The following color variables are used specifically for the navigation menu. They are separate from the global colors to allow for more customization options */
 :root {
-  --nav-color: #f7f5ea;  /* Ivory main navmenu links */
-  --nav-hover-color: #f6d24b; /* Applied to main navmenu links when they are hovered over or active */
-  --nav-mobile-background-color: #06071a; /* Used as the background color for mobile navigation menu */
-  --nav-dropdown-background-color: #06071a; /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
-  --nav-dropdown-color: #f7f5ea; /* Ivory dropdown navigation links */
-  --nav-dropdown-hover-color: #f6d24b; /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
+  --nav-color: #fffefa;  /* Clean light nav text */
+  --nav-hover-color: #dcb94b; /* Refined gold nav accent */
+  --nav-mobile-background-color: #11183f; /* Modern navy mobile menu */
+  --nav-dropdown-background-color: #11183f; /* Modern navy dropdown */
+  --nav-dropdown-color: #fffefa; /* Clean dropdown text */
+  --nav-dropdown-hover-color: #dcb94b; /* Gold dropdown accent */
 }
 
 /* Color Presets - These classes override global colors when applied to any section or element, providing reuse of the sam color scheme. */
 
 .light-background {
   --background-color: #f9f9f9;
-  --surface-color: #f7f5ea;
+  --surface-color: #fffefa;
 }
 
 .dark-background {
-  --background-color: #06071a;
-  --default-color: #f7f5ea;
-  --heading-color: #f7f5ea;
-  --surface-color: #151c65;
-  --contrast-color: #f7f5ea;
+  --background-color: #11183f;
+  --default-color: #fffefa;
+  --heading-color: #fffefa;
+  --surface-color: #1b2554;
+  --contrast-color: #fffefa;
 }
 
 /* Smooth scroll */
@@ -225,7 +225,7 @@ section,
 }
 
 .light-background {
-  background-image: linear-gradient(180deg, rgba(21, 28, 101, 0.025), transparent 70%);
+  background-image: linear-gradient(180deg, rgba(17, 24, 63, 0.025), transparent 70%);
 }
 
 .section-title {
@@ -267,7 +267,7 @@ section,
 .course-details .course-sidebar .pricing-card,
 .course-details .course-sidebar .course-info-card,
 .course-details .course-sidebar .course-tags {
-  box-shadow: 0 12px 32px rgba(21, 28, 101, 0.08);
+  box-shadow: 0 12px 32px rgba(17, 24, 63, 0.08);
   transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
 }
 
@@ -276,8 +276,8 @@ section,
 .events .card:hover,
 .pricing .pricing-item:hover {
   transform: translateY(-4px);
-  border-color: rgba(246, 210, 75, 0.72);
-  box-shadow: 0 18px 38px rgba(21, 28, 101, 0.12);
+  border-color: rgba(220, 185, 75, 0.72);
+  box-shadow: 0 18px 38px rgba(17, 24, 63, 0.12);
 }
 
 .courses .course-content {
@@ -293,7 +293,7 @@ section,
 
 .features .features-item {
   border-radius: 8px;
-  box-shadow: 0 8px 22px rgba(21, 28, 101, 0.06);
+  box-shadow: 0 8px 22px rgba(17, 24, 63, 0.06);
   transition: transform 0.3s ease, border-color 0.3s ease;
 }
 
@@ -307,8 +307,8 @@ section,
 }
 
 .footer {
-  border-top: 1px solid rgba(246, 210, 75, 0.18);
-  background-image: linear-gradient(135deg, rgba(21, 28, 101, 0.24), transparent 55%);
+  border-top: 1px solid rgba(220, 185, 75, 0.18);
+  background-image: linear-gradient(135deg, rgba(17, 24, 63, 0.24), transparent 55%);
 }
 
 .footer .footer-links ul a,
@@ -320,7 +320,7 @@ section,
 
 .footer .footer-newsletter .newsletter-form {
   border-radius: 6px;
-  border-color: rgba(21, 28, 101, 0.16);
+  border-color: rgba(17, 24, 63, 0.16);
 }
 
 .footer .footer-newsletter .newsletter-form input[type=submit] {
@@ -347,7 +347,7 @@ section,
   .navmenu a:hover,
   .navmenu .active,
   .navmenu .active:focus {
-    background: rgba(246, 210, 75, 0.08);
+    background: rgba(220, 185, 75, 0.08);
   }
 
   .page-title .heading {
@@ -368,13 +368,13 @@ section,
 }
 
 :focus-visible {
-  outline: 3px solid rgba(246, 210, 75, 0.48);
+  outline: 3px solid rgba(220, 185, 75, 0.48);
   outline-offset: 3px;
 }
 
 ::selection {
-  background: #f6d24b;
-  color: #151c65;
+  background: #dcb94b;
+  color: #11183f;
 }
 
 /* Email Form Messages
@@ -382,7 +382,7 @@ section,
 .email-form .error-message {
   display: none;
   background: #df1529;
-  color: #f7f5ea;
+  color: #fffefa;
   text-align: left;
   padding: 15px;
   margin-bottom: 24px;
@@ -391,7 +391,7 @@ section,
 
 .email-form .sent-message {
   display: none;
-  color: #f7f5ea;
+  color: #fffefa;
   background: #059652;
   text-align: center;
   padding: 15px;
@@ -469,7 +469,7 @@ section,
   height: 0;
   border-top: 10px solid transparent;
   border-bottom: 10px solid transparent;
-  border-left: 15px solid #f7f5ea;
+  border-left: 15px solid #fffefa;
   z-index: 100;
   transition: all 400ms cubic-bezier(0.55, 0.055, 0.675, 0.19);
 }
@@ -485,7 +485,7 @@ section,
   border: none;
   border-top: 10px solid transparent;
   border-bottom: 10px solid transparent;
-  border-left: 15px solid #f7f5ea;
+  border-left: 15px solid #fffefa;
   z-index: 200;
   animation: none;
   border-radius: 0;
@@ -512,15 +512,15 @@ section,
 # Global Header
 --------------------------------------------------------------*/
 .header {
-  color: #f7f5ea;
-  background: linear-gradient(90deg, rgba(6, 7, 26, 0.88), rgba(21, 28, 101, 0.72));
+  color: #fffefa;
+  background: linear-gradient(90deg, rgba(17, 24, 63, 0.88), rgba(17, 24, 63, 0.72));
   backdrop-filter: blur(24px) saturate(150%);
   -webkit-backdrop-filter: blur(24px) saturate(150%);
   border: 1px solid rgba(247, 245, 234, 0.12);
   border-top: 0;
   border-left: 0;
   border-right: 0;
-  box-shadow: 0 10px 32px rgba(6, 7, 26, 0.12);
+  box-shadow: 0 10px 32px rgba(17, 24, 63, 0.12);
   padding: 11px 0;
   transition: padding 0.35s ease, background 0.35s ease, box-shadow 0.35s ease;
   z-index: 997;
@@ -542,7 +542,7 @@ section,
   letter-spacing: 0;
   text-transform: uppercase;
   color: var(--accent-color);
-  text-shadow: 0 2px 14px rgba(246, 210, 75, 0.14);
+  text-shadow: 0 2px 14px rgba(220, 185, 75, 0.14);
 }
 
 .header .btn-getstarted,
@@ -554,7 +554,7 @@ section,
   margin: 0 0 0 30px;
   border: 1px solid rgba(247, 245, 234, 0.32);
   border-radius: 999px;
-  box-shadow: 0 6px 18px rgba(246, 210, 75, 0.16);
+  box-shadow: 0 6px 18px rgba(220, 185, 75, 0.16);
   transition: 0.3s;
 }
 
@@ -581,9 +581,9 @@ section,
 }
 
 .scrolled .header {
-  background: linear-gradient(90deg, rgba(6, 7, 26, 0.94), rgba(21, 28, 101, 0.86));
-  border-bottom-color: rgba(246, 210, 75, 0.34);
-  box-shadow: 0 12px 36px rgba(6, 7, 26, 0.24);
+  background: linear-gradient(90deg, rgba(17, 24, 63, 0.94), rgba(17, 24, 63, 0.86));
+  border-bottom-color: rgba(220, 185, 75, 0.34);
+  box-shadow: 0 12px 36px rgba(17, 24, 63, 0.24);
   padding: 7px 0;
 }
 
@@ -684,10 +684,10 @@ section,
   }
 
   .navmenu .dropdown ul {
-    background: rgba(6, 7, 26, 0.94);
+    background: rgba(17, 24, 63, 0.94);
     backdrop-filter: blur(18px);
     -webkit-backdrop-filter: blur(18px);
-    border: 1px solid rgba(246, 210, 75, 0.16);
+    border: 1px solid rgba(220, 185, 75, 0.16);
     border-radius: 8px;
   }
 
@@ -729,11 +729,11 @@ section,
     padding: 10px 0;
     margin: 0;
     border-radius: 12px;
-    background: rgba(6, 7, 26, 0.94);
+    background: rgba(17, 24, 63, 0.94);
     backdrop-filter: blur(18px);
     -webkit-backdrop-filter: blur(18px);
-    border: 1px solid rgba(246, 210, 75, 0.18);
-    box-shadow: 0 18px 44px rgba(6, 7, 26, 0.28);
+    border: 1px solid rgba(220, 185, 75, 0.18);
+    box-shadow: 0 18px 44px rgba(17, 24, 63, 0.28);
     overflow-y: auto;
     transition: 0.3s;
     z-index: 9998;
@@ -812,7 +812,7 @@ section,
   }
 
   .mobile-nav-active .mobile-nav-toggle {
-    color: #f7f5ea;
+    color: #fffefa;
     position: absolute;
     font-size: 32px;
     top: 15px;
@@ -838,8 +838,8 @@ section,
 # Global Footer
 --------------------------------------------------------------*/
 .footer {
-  color: #f7f5ea;
-  background-color: #06071a;
+  color: #fffefa;
+  background-color: #11183f;
   font-size: 14px;
   padding-bottom: 50px;
   position: relative;
@@ -863,7 +863,7 @@ section,
   font-weight: 700;
   letter-spacing: 1px;
   font-family: var(--heading-font);
-  color: #f6d24b;
+  color: #dcb94b;
 }
 
 .footer .footer-about p {
@@ -891,7 +891,7 @@ section,
 }
 
 .footer h4 {
-  color: #f6d24b;
+  color: #dcb94b;
   font-size: 16px;
   font-weight: bold;
   position: relative;
@@ -1013,7 +1013,7 @@ section,
   position: fixed;
   top: calc(50% - 30px);
   left: calc(50% - 30px);
-  border: 6px solid #f7f5ea;
+  border: 6px solid #fffefa;
   border-color: var(--accent-color) transparent var(--accent-color) transparent;
   border-radius: 50%;
   width: 60px;
@@ -1078,9 +1078,9 @@ section,
 # Global Page Titles & Breadcrumbs
 --------------------------------------------------------------*/
 .page-title {
-  --default-color: #f7f5ea;
-  --background-color: #151c65;
-  --heading-color: #f6d24b;
+  --default-color: #fffefa;
+  --background-color: #11183f;
+  --heading-color: #dcb94b;
   color: var(--default-color);
   background-color: var(--background-color);
   position: relative;
@@ -1097,7 +1097,7 @@ section,
 }
 
 .page-title nav {
-  background-color: #06071a;
+  background-color: #11183f;
   padding: 20px 0;
 }
 
