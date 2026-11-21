@@ -87,6 +87,69 @@ h6 {
   font-family: var(--heading-font);
 }
 
+/* Consistent image presentation across page layouts */
+img {
+  max-width: 100%;
+}
+
+.about .img-fluid,
+.about-us .img-fluid,
+.course-details .course-header .course-image,
+.events .card-img {
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.about .img-fluid,
+.about-us .img-fluid {
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+}
+
+.courses .course-item > img,
+.course-details .course-header .course-image img {
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+}
+
+.course-details .course-header .course-image img {
+  height: 400px;
+}
+
+.trainers-index .member img,
+.trainers .member .member-img img {
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  object-position: center top;
+}
+
+.events .card-img img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+}
+
+.course-details .tabs .tab-pane img {
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+@media (max-width: 768px) {
+  .courses .course-item > img,
+  .events .card-img img {
+    height: 220px;
+  }
+
+  .course-details .course-header .course-image img {
+    height: 260px;
+  }
+}
+
 /* Email Form Messages
 ------------------------------*/
 .email-form .error-message {
