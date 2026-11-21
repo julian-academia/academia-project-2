@@ -217,10 +217,30 @@ img {
 section,
 .section {
   padding: 72px 0;
+  isolation: isolate;
+}
+
+.main .container {
+  position: relative;
+}
+
+.light-background {
+  background-image: linear-gradient(180deg, rgba(21, 28, 101, 0.025), transparent 70%);
 }
 
 .section-title {
   padding-bottom: 44px;
+  max-width: 760px;
+}
+
+.section-title h2 {
+  color: rgba(68, 68, 68, 0.72);
+  letter-spacing: 0;
+}
+
+.section-title p {
+  letter-spacing: 0;
+  line-height: 1.18;
 }
 
 .section-title p {
@@ -247,7 +267,17 @@ section,
 .course-details .course-sidebar .pricing-card,
 .course-details .course-sidebar .course-info-card,
 .course-details .course-sidebar .course-tags {
-  box-shadow: 0 8px 24px rgba(21, 28, 101, 0.07);
+  box-shadow: 0 12px 32px rgba(21, 28, 101, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.courses .course-item:hover,
+.trainers-index .member:hover,
+.events .card:hover,
+.pricing .pricing-item:hover {
+  transform: translateY(-4px);
+  border-color: rgba(246, 210, 75, 0.72);
+  box-shadow: 0 18px 38px rgba(21, 28, 101, 0.12);
 }
 
 .courses .course-content {
@@ -262,8 +292,13 @@ section,
 }
 
 .features .features-item {
-  border-radius: 6px;
-  box-shadow: 0 5px 18px rgba(21, 28, 101, 0.05);
+  border-radius: 8px;
+  box-shadow: 0 8px 22px rgba(21, 28, 101, 0.06);
+  transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.features .features-item:hover {
+  transform: translateY(-3px);
 }
 
 .why-us .why-box,
@@ -273,6 +308,7 @@ section,
 
 .footer {
   border-top: 1px solid rgba(246, 210, 75, 0.18);
+  background-image: linear-gradient(135deg, rgba(21, 28, 101, 0.24), transparent 55%);
 }
 
 .footer .footer-links ul a,
@@ -308,6 +344,12 @@ section,
     padding: 56px 0;
   }
 
+  .navmenu a:hover,
+  .navmenu .active,
+  .navmenu .active:focus {
+    background: rgba(246, 210, 75, 0.08);
+  }
+
   .page-title .heading {
     padding: 48px 0;
   }
@@ -315,6 +357,24 @@ section,
   .page-title .heading h1 {
     font-size: 34px;
   }
+
+  .section-title {
+    padding-bottom: 34px;
+  }
+
+  .section-title p {
+    font-size: 28px;
+  }
+}
+
+:focus-visible {
+  outline: 3px solid rgba(246, 210, 75, 0.48);
+  outline-offset: 3px;
+}
+
+::selection {
+  background: #f6d24b;
+  color: #151c65;
 }
 
 /* Email Form Messages
@@ -623,6 +683,14 @@ section,
     visibility: visible;
   }
 
+  .navmenu .dropdown ul {
+    background: rgba(6, 7, 26, 0.94);
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
+    border: 1px solid rgba(246, 210, 75, 0.16);
+    border-radius: 8px;
+  }
+
   .navmenu .dropdown .dropdown ul {
     top: 0;
     left: -90%;
@@ -657,13 +725,15 @@ section,
     display: none;
     list-style: none;
     position: absolute;
-    inset: 60px 20px 20px 20px;
+    inset: 72px 16px 16px 16px;
     padding: 10px 0;
     margin: 0;
-    border-radius: 6px;
-    background-color: var(--nav-mobile-background-color);
-    border: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
-    box-shadow: none;
+    border-radius: 12px;
+    background: rgba(6, 7, 26, 0.94);
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
+    border: 1px solid rgba(246, 210, 75, 0.18);
+    box-shadow: 0 18px 44px rgba(6, 7, 26, 0.28);
     overflow-y: auto;
     transition: 0.3s;
     z-index: 9998;
@@ -672,6 +742,7 @@ section,
   .navmenu a,
   .navmenu a:focus {
     color: var(--nav-dropdown-color);
+    border-radius: 8px;
     padding: 10px 20px;
     font-family: var(--nav-font);
     font-size: 17px;
